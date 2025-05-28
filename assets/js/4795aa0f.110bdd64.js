@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[978],{3937:t=>{t.exports=JSON.parse('{"authors":[{"name":"MrBisquit","title":"Project lead","url":"https://wtdawson.info","page":{"permalink":"/docs/blog/authors/mrbisquit"},"socials":{"github":"https://github.com/mrbisquit"},"imageURL":"https://github.com/mrbisquit.png","key":"mrbisquit","count":1}]}')}}]);

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>WeatherStack Blog</title>
-        <link>https://weatherstack.wtdawson.info/blog</link>
+        <link>https://weatherstack.wtdawson.info/docs/blog</link>
         <description>WeatherStack Blog</description>
         <lastBuildDate>Wed, 28 May 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,20 +10,20 @@
         <language>en</language>
         <item>
             <title><![CDATA[Welcome]]></title>
-            <link>https://weatherstack.wtdawson.info/blog/welcome</link>
-            <guid>https://weatherstack.wtdawson.info/blog/welcome</guid>
+            <link>https://weatherstack.wtdawson.info/docs/blog/welcome</link>
+            <guid>https://weatherstack.wtdawson.info/docs/blog/welcome</guid>
             <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome to WeatherStack's documentation website.]]></description>
             <content:encoded><![CDATA[<p>Welcome to WeatherStack's documentation website.</p>
 <ul>
-<li><a href="https://weatherstack.wtdawson.info/blog/welcome#what-is-weatherstack">What is WeatherStack?</a></li>
-<li><a href="https://weatherstack.wtdawson.info/blog/welcome#parts-of-the-project">Parts of the project</a></li>
-<li><a href="https://weatherstack.wtdawson.info/blog/welcome#aims">Aims</a></li>
-<li><a href="https://weatherstack.wtdawson.info/blog/welcome#technology-stack">Technology stack</a></li>
+<li><a href="https://weatherstack.wtdawson.info/docs/blog/welcome#what-is-weatherstack">What is WeatherStack?</a></li>
+<li><a href="https://weatherstack.wtdawson.info/docs/blog/welcome#parts-of-the-project">Parts of the project</a></li>
+<li><a href="https://weatherstack.wtdawson.info/docs/blog/welcome#aims">Aims</a></li>
+<li><a href="https://weatherstack.wtdawson.info/docs/blog/welcome#technology-stack">Technology stack</a></li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-weatherstack">What is WeatherStack?<a href="https://weatherstack.wtdawson.info/blog/welcome#what-is-weatherstack" class="hash-link" aria-label="Direct link to What is WeatherStack?" title="Direct link to What is WeatherStack?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-weatherstack">What is WeatherStack?<a href="https://weatherstack.wtdawson.info/docs/blog/welcome#what-is-weatherstack" class="hash-link" aria-label="Direct link to What is WeatherStack?" title="Direct link to What is WeatherStack?">​</a></h2>
 <p>WeatherStack is an open-source project designed to make it easy for people to set up and maintain their very own personal weather station (PWS) as well as send their weather data to providers such as Wunderground.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="parts-of-the-project">Parts of the project<a href="https://weatherstack.wtdawson.info/blog/welcome#parts-of-the-project" class="hash-link" aria-label="Direct link to Parts of the project" title="Direct link to Parts of the project">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="parts-of-the-project">Parts of the project<a href="https://weatherstack.wtdawson.info/docs/blog/welcome#parts-of-the-project" class="hash-link" aria-label="Direct link to Parts of the project" title="Direct link to Parts of the project">​</a></h2>
 <p>This project will be structured into many different parts, including:</p>
 <ul>
 <li>The backend (Basically the brains of the project)<!-- -->
@@ -49,7 +49,7 @@
 </li>
 <li>Possibly more in the future</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="aims">Aims<a href="https://weatherstack.wtdawson.info/blog/welcome#aims" class="hash-link" aria-label="Direct link to Aims" title="Direct link to Aims">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="aims">Aims<a href="https://weatherstack.wtdawson.info/docs/blog/welcome#aims" class="hash-link" aria-label="Direct link to Aims" title="Direct link to Aims">​</a></h2>
 <p>I aim this project to be compatible with pretty much any sensor that can connect to an embedded device (So pretty much anything), including supporting things like the old Pimoroni Weather Station Kit.
 I also aim this project to be easy-to-use, beginner &amp; developer friendly, and easy to expand.</p>
 <ul>
@@ -58,7 +58,7 @@ I also aim this project to be easy-to-use, beginner &amp; developer friendly, an
 <li>Helpful documentation (Explain everything, with nice diagrams when needed)</li>
 <li>Customizable</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="technology-stack">Technology stack<a href="https://weatherstack.wtdawson.info/blog/welcome#technology-stack" class="hash-link" aria-label="Direct link to Technology stack" title="Direct link to Technology stack">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="technology-stack">Technology stack<a href="https://weatherstack.wtdawson.info/docs/blog/welcome#technology-stack" class="hash-link" aria-label="Direct link to Technology stack" title="Direct link to Technology stack">​</a></h2>
 <p>What will the different parts of the project be made of?</p>
 <table><thead><tr><th style="text-align:left">Part of the project</th><th style="text-align:left">Tech stack</th></tr></thead><tbody><tr><td style="text-align:left">The backend</td><td style="text-align:left">TypeScript (Node/Deno), C#, <strong>possibly</strong> Python for ML</td></tr><tr><td style="text-align:left">Front-end/Apps</td><td style="text-align:left">C# for desktop/mobile applications, TypeScript (React, TSX) for the web inteface, and C++ for the IoT screens</td></tr><tr><td style="text-align:left">Edge-devices</td><td style="text-align:left">C++</td></tr></tbody></table>]]></content:encoded>
         </item>
