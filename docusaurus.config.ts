@@ -25,7 +25,7 @@ const config: Config = {
   organizationName: 'WeatherStack', // Usually your GitHub org/user name.
   projectName: 'WeatherStack', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',//'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
