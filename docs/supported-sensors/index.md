@@ -8,7 +8,7 @@ If you'd like to **suggest a sensor**, please open a discussion on the GitHub Or
 
 ## Sensor implementation table meaning
 
-The 3 emojis in the status area mean these 3 things:
+The following are the possible sensor statuses:
 |  ❔  |     Emoji 1     |  Emoji 2   |    Emoji 3     |
 | :--: | :-------------: | :--------: | :------------: |
 |  ✅  |   Implemented   |   Tested   |   Documented   |
