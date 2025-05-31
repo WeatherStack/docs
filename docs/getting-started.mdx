@@ -1,0 +1,36 @@
+---
+title: "Getting started"
+sidebar_position: 1
+---
+
+## Getting started with WeatherStack
+You'll need a few things before beginning to set up WeatherStack. Below is a table of items **required** to be able to run WeatherStack.
+
+### Prerequisites
+
+| Item                        | Notes                                                                                                 |
+| :-------------------------- | :---------------------------------------------------------------------------------------------------- |
+| 2 **Rasbberry Pi**s         | There'll be one that stores and processes data, and the other that you can use outside with a camera. |
+| Any sensors you'll be using | Any sensors, there is a [recommended list of sensors below](#recommended-list-of-sensors).            |
+
+### Recommended list of sensors
+
+For a full weather station; you'll need many different types of sensors, such as: Temperture, Humidity, Pressure, Light, Wind (direction & speed), and rain.
+You may also wish to have a couple others like an RGB (BGR) sensor, or a UV sensor.
+For a full list of the sensors that WeatherStack supports, [please visit here](/docs/supported-sensors/).
+
+|    Type     |                 Recommended Sensor                  | Notes |
+| :---------: | :-------------------------------------------------: | :---: |
+|    Light    |     [`BH1750`](/docs/supported-sensors/BH1750/)     |       |
+|  Pressure   | [`BME/BMP280`](/docs/supported-sensors/BME-BMP280/) |       |
+| Temperature |      [`AHT10`](/docs/supported-sensors/AHT10/)      |       |
+|  Humidity   |      [`AHT10`](/docs/supported-sensors/AHT10/)      |       |
+|  Pressure   | [`BME/BMP280`](/docs/supported-sensors/BME-BMP280/) |       |
+|     UV      |   [`GYML1855`](/docs/supported-sensors/GYML1855/)   |       |
+
+### Setting up WeatherStack
+
+:::tip
+Before beginning to set up WeatherStack, it's recommended to read the [supported sensors](/docs/supported-sensors/) page, to see which sensors are supported, and how to wire them up.
+It is also recommended to read into how WeatherStack works, and how to set it up, by reading the [WeatherStack overview](/docs/overview/) page.
+:::

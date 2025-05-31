@@ -1,0 +1,52 @@
+---
+title: "Overview"
+sidebar_position: 1
+---
+
+This page shows you the overview of the WeatherStack project, including the core features, an overview of how it works, and some little diagrams.
+There are 3 main components to WeatherStack, which are the **Backend/Core**, **Edge devices (Nodes & Sensors)**, and **Frontend**.
+These are called "WeatherStack Core", "WeatherStack Edge", and "WeatherStack Frontend" respectively.
+
+## WeatherStack Core
+The core of WeatherStack is the backend, which is responsible for processing data from the edge devices, storing it, and providing an API for the frontend to use.
+It's built using TypeScript (Deno), PostgreSQL, and a few other little bits, like C# for processing the data into things like timelapses, or reports that you can download.
+
+This is desgined to run on a dedicated server, specficially a Raspberry Pi 4 or higher. It's best to have this running on your local network for fast data transfer between the edge devices and the core.
+It is however available to run as a Docker container, but it may severely limit it's performance, and may not be able to handle the data as well as a dedicated server.
+
+It is suggested to have an external storage device connected to the server, such as a USB drive or an external hard drive, to store the data that is collected by the edge devices.
+Since it runs on Linux, it's fairly easy to set up a NAS (Network Attached Storage) to store the data, which can be accessed by the frontend and other devices on the network,
+though it is not recommended as it may slow down the performance of the core, and may cause issues with data transfer.
+
+[Read more about the core here](/docs/core/).
+
+## WeatherStack Edge
+This is the part of WeatherStack that actually collects the data from the sensors. This part is made up of another Raspberry Pi (or any other device that can run Linux),
+and 1 or more ESP32's that actually connect to the sensors to collect data.
+You may wish to connect a camera to the Rasberry Pi (or any other device that can run Linux) to take photos of the sky at set intervals (Same as, or different to the data collection interval),
+and send them to the core for processing.
+
+If you would like to create timelapses of the sky, you may need to connect a camera to the server, and set it up to take photos at set intervals.
+
+:::tip
+When selecting a device to run the edge software, it is recommended to use a Raspberry Pi 4 or higher, as it has Wi-Fi built in.
+:::
+
+[Read more about the edge here](/docs/edge/).
+
+## WeatherStack Frontend
+This is what you will see most of the time. There are many different interfaces, such as the web interface, the mobile app, and the desktop app.
+The web interface is the main interface, and is built using React, TypeScript, and Tailwind CSS.
+
+You can control most of the settings from the web interface, such as the data collection interval, the sensors that are connected, and the camera settings.
+You can also view the data that has been collected, such as the temperature, humidity, pressure, and light levels.
+
+This allows you to view the data in real-time, and also allows you to download reports and timelapses of the data that has been collected.
+You can schedule things to happen, like creating reports, making timelapses, and more.
+
+You may also make your data public (if you wish), so that others can view your data using the web interface.
+
+There is also a second desktop interface, which is built for making the software for the ESP32 edge devices, so you can easily select the sensors you want to use,
+and it will generate the code for you to upload to the ESP32. It will also tell you waht pins to connect the sensors to, and how to wire them up.
+
+[Read more about the frontend here](/docs/frontend/).
