@@ -18,9 +18,9 @@ The following are the possible sensor statuses:
 
 ## Sensor implementation table
 
-|    Sensor name     |                      Sensor type                       |  Current Status |                    Sensor Docs                    |
-| :----------------: | :----------------------------------------------------: | :-------------: | :-----------------------------------------------: |
-|      `BH1750`      |                  Ambient Light Sensor                  |     ❌⚠️⚠️     |    [View docs](/docs/supported-sensors/BH1750)    |
+|    Sensor name     |                      Sensor type                       | Current Status |                    Sensor Docs                    |
+| :----------------: | :----------------------------------------------------: | :------------: | :-----------------------------------------------: |
+|      `BH1750`      |                  Ambient Light Sensor                  |   ❌⚠️⚠️   |    [View docs](/docs/supported-sensors/BH1750)    |
 |      `BMP180`      |                Digital Pressure Sensor                 |     ❌❌❌     |    [View docs](/docs/supported-sensors/BMP180)    |
 |    `CJMCU-1100`    |               Formalin Detection Sensor                |     ❌❌❌     |  [View docs](/docs/supported-sensors/CJMCU-1100)  |
 |    `BME/BMP280`    |    Digital Temperature and Humidity Pressure Sensor    |     ❌❌❌     |  [View docs](/docs/supported-sensors/BME-BMP280)  |
@@ -28,4 +28,13 @@ The following are the possible sensor statuses:
 |     `VEML7700`     |                  Ambient Light Sensor                  |     ❌❌❌     |   [View docs](/docs/supported-sensors/VEML7700)   |
 |     `GYML8511`     |                       UV Sensor                        |     ❌❌❌     |   [View docs](/docs/supported-sensors/GYML8511)   |
 | `ENS160` + `AHT21` |                   Air Quality Sensor                   |     ❌❌❌     | [View docs](/docs/supported-sensors/ENS160-AHT21) |
-|     `TCS3472`      |                       RGB Sensor                       |                 |                                                   |
+|     `TCS3472`      |                       RGB Sensor                       |                |                                                   |
+
+## Pinout diagrams
+These diagrams will help you when connecting your ESP32 to your sensors.
+
+|         ESP32-S3-DevKitM-1          |
+| :---------------------------------: |
+| ![](pinouts/ESP32-S3-DevKitM-1.jpg) |
+|       **ESP32-S3-DevKitC-1**        |
+| ![](pinouts/ESP32_S3-DevKitC-1.png) |
