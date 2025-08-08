@@ -104,9 +104,13 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Getting Started',
+              to: '/docs/getting-started',
             },
+            {
+              label: 'Supported Sensors',
+              to: '/docs/supported-sensors',
+            }
           ],
         },
         {

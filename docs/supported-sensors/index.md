@@ -6,6 +6,12 @@ sidebar_position: 1
 This page contains the links to all of the sensors that have been tested and implemented in WeatherStack.
 If you'd like to **suggest a sensor**, please open a discussion on the GitHub Organisation.
 
+Each of these sensors will have a component library that you will need to use to be able to use the sensor.
+Most of the sensors that are marked as implemented will have a component library for both ESP-IDF **and** Arduino.
+However, some many not. It is important to check.
+
+Browse components: [ESP-IDF](/docs/components/ESP-IDF/) • [Arduino](/docs/components/Arduino/)
+
 ## Sensor implementation table meaning
 
 The following are the possible sensor statuses:
