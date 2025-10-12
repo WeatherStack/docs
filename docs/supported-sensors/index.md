@@ -15,7 +15,7 @@ Browse components: [ESP-IDF](/docs/components/ESP-IDF/) • [Arduino](/docs/comp
 ## Sensor implementation table meaning
 
 The following are the possible sensor statuses:
-|    ?     |     Emoji 1     |  Emoji 2   |    Emoji 3     |
+|          | Implementation  |  Testing   | Documentation  |
 | :------: | :-------------: | :--------: | :------------: |
 | &#10003; |   Implemented   |   Tested   |   Documented   |
 | &#8764;  |  Implementing   |  Testing   |  Documenting   |
