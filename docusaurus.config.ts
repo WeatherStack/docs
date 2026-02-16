@@ -124,7 +124,7 @@ const config: Config = {
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/',
+              href: 'https://discord.gg/NADxKhJaQP',
             }
           ],
         },
