@@ -93,6 +93,11 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          href: 'https://ws-core-ref.wtdawson.info/',
+          label: 'Core Reference',
+          position: 'left'
+        },
+        {
           href: 'https://github.com/weatherstack/weatherstack',
           label: 'GitHub',
           position: 'right',
@@ -124,7 +129,7 @@ const config: Config = {
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/',
+              href: 'https://discord.gg/NADxKhJaQP',
             }
           ],
         },
