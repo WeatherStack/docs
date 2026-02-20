@@ -93,6 +93,11 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          to: 'https://ws-core-ref.wtdawson.info/',
+          label: 'Core Reference',
+          position: 'left'
+        },
+        {
           href: 'https://github.com/weatherstack/weatherstack',
           label: 'GitHub',
           position: 'right',
