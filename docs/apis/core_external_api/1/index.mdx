@@ -6,14 +6,19 @@ import HttpMethod from "@site/src/components/httpMethod";
 import HttpCode from "@site/src/components/httpCode";
 
 # WeatherStack Core External API 1.x.x
+These API routes follow the [standard API guidelines](/docs/standards/apis/), and can provide data
+in a range of different methods, mainly JSON (`application/json`), some may not accept data at all,
+or only by JSON (`application/json`), please see individual API route documentation.
 
 <HttpMethod method="GET" /> <a id="root" href="#root">`/`</a>
 
 <br /><br />
 
-**Description:**
+**Description:**<br />
 This API route is simply to return a small JSON object, telling you some basic information as to
-what is running on that port.
+what is running on that port.<br />
+**Accepts**:<br />
+(0)
 
 <details>
     <summary>
@@ -40,8 +45,10 @@ what is running on that port.
 
 <br /><br />
 
-**Description:**
-Only returns status 200 if everything is good, and working correctly and as expected.
+**Description:**<br />
+Only returns status 200 if everything is good, and working correctly and as expected.<br />
+**Accepts**:<br />
+(0)
 
 <details>
     <summary>
@@ -57,8 +64,10 @@ Only returns status 200 if everything is good, and working correctly and as expe
 
 <br /><br />
 
-**Description:**
-This API route gives more in-depth information, such as uptime.
+**Description:**<br />
+This API route gives more in-depth information, such as uptime.<br />
+**Accepts**:<br />
+(0)
 
 <details>
     <summary>
@@ -76,6 +85,122 @@ This API route gives more in-depth information, such as uptime.
             "uptime": 3538688.83811651,
             "uptime_human": "1 months 10 days 12 hours 24 minutes 32 seconds 838 milliseconds"
         }
+    }
+    ```
+</details>
+
+---
+
+<HttpMethod method="POST" /> <a id="health-info" href="#health-info">`/v1/auth/authenticate/`</a>
+<br /><br />
+:::important[Not yet implemented]
+This has not yet been implemented, so the below documentation may change.
+:::
+
+**Description:**<br />
+The API route to do basic authentication, this API route does not handle token upgrading,
+only basic authentication.<br />
+For more information, read the [security documentation](/docs/security/) (which doesn't exist yet).<br />
+**Accepts**:<br />
+JSON (`application/json`) (1)
+
+**Expected body content:**
+<details>
+    <summary>
+        JSON (`application/json`)
+    </summary>
+
+    ```json
+    {
+        // Username OR email
+        "username": "john.doe",
+        "email": null,
+
+        "password": "s0m3%c00l!p@$$w0rd123"     // Passwords do not need to be encrypted, as it's over HTTPS
+    }
+    ```
+</details>
+
+<details>
+    <summary>
+        <HttpCode code="200" />
+    </summary>
+    **Headers:**<br />
+    | Header         | Value              |
+    | :------------- | :----------------- |
+    | `Content-Type` | `application/json` |
+
+    **Data type:**<br />
+    JSON (`application/json`)<br />
+
+    ```json
+    {
+        "success": true,
+        "code": 200,
+
+        "message": "Authenticated successfully!",
+
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30",
+        
+        "info": {
+            "token_duration": 2592000,
+            "token_duration_human": "30 days",
+
+            "valid_from": "2026-01-00T17:30:00.000Z",
+            "valid_to": "2026-01-30T17:30:00.000Z"
+        }
+    }
+    ```
+</details>
+
+<details>
+    <summary>
+        <HttpCode code="403" />
+    </summary>
+    **Headers:**<br />
+    | Header         | Value              |
+    | :------------- | :----------------- |
+    | `Content-Type` | `application/json` |
+
+    **Data type:**<br />
+    JSON (`application/json`)<br />
+
+    ```json
+    {
+        "success": true,
+        "code": 403,
+
+        "message": "Invalid credentials",
+
+        // A generic error code that can be easily understood by the front-end
+        // doesn't have be documented
+        "error": "AUTH_INVALID_CREDENTIALS"
+    }
+    ```
+</details>
+
+<details>
+    <summary>
+        <HttpCode code="500" />
+    </summary>
+    **Headers:**<br />
+    | Header         | Value              |
+    | :------------- | :----------------- |
+    | `Content-Type` | `application/json` |
+
+    **Data type:**<br />
+    JSON (`application/json`)<br />
+
+    ```json
+    {
+        "success": true,
+        "code": 403,
+
+        "message": "We goin' to the moon!",
+
+        // A generic error code that can be easily understood by the front-end
+        // doesn't have be documented
+        "error": "AUTH_NOT_READY_YET"
     }
     ```
 </details>

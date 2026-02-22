@@ -21,12 +21,14 @@ For example:
 ## Methods
 Methods must be used for their correct purposes.
 
-|   Method    | Purpose                          |
-| :---------: | :------------------------------- |
-|    `GET`    | Retrieving data                  |
-|   `POST`    | Creating new data/resources      |
-| `PUT/PATCH` | Updating existing data/resources |
-|  `DELETE`   | Removing existing data/resources |
+import HttpMethod from "@site/src/components/httpMethod";
+
+|                          Method                          | Purpose                          |
+| :------------------------------------------------------: | :------------------------------- |
+|               <HttpMethod method="GET" />                | Retrieving data                  |
+|               <HttpMethod method="POST" />               | Creating new data/resources      |
+| <HttpMethod method="PUT" /><HttpMethod method="PATCH" /> | Updating existing data/resources |
+|              <HttpMethod method="DELETE" />              | Removing existing data/resources |
 
 ## HTTP codes
 HTTP return codes must also be used for their correct purposes.

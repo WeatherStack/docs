@@ -28,14 +28,24 @@ Exposing this endpoint without securing it is dangerous, and leaves a security v
 
 <br /><br />
 
-**Description:**
+**Description:**<br />
 This API route is simply to return a small JSON object, telling you some basic information as to
-what is running on that port.
+what is running on that port.<br />
+**Accepts**:<br />
+(0)<br />
+**Returns**:
 
 <details>
     <summary>
         <HttpCode code="200" />
     </summary>
+    **Headers:**<br />
+    | Header         | Value              |
+    | :------------- | :----------------- |
+    | `Content-Type` | `application/json` |
+
+    **Data type:**<br />
+    JSON (`application/json`)<br />
 
     ```json
     {
@@ -57,8 +67,10 @@ what is running on that port.
 
 <br /><br />
 
-**Description:**
-Only returns status 200 if everything is good, and working correctly and as expected.
+**Description:**<br />
+Only returns status 200 if everything is good, and working correctly and as expected.<br />
+**Accepts**:<br />
+(0)
 
 <details>
     <summary>
@@ -74,8 +86,10 @@ Only returns status 200 if everything is good, and working correctly and as expe
 
 <br /><br />
 
-**Description:**
-This API route gives more in-depth information, such as uptime.
+**Description:**<br />
+This API route gives more in-depth information, such as uptime.<br />
+**Accepts**:<br />
+(0)
 
 <details>
     <summary>

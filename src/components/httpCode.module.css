@@ -8,6 +8,27 @@
     text-transform: uppercase;
 }
 
-.http_200 {
+.http_blue {
+    background-color: #338de2; 
+}
+
+.http_green {
     background-color: #49cc90; 
+}
+
+.http_yellow {
+    background-color: #ffff00;
+    color: black;
+}
+
+.http_red {
+    background-color: #e21d1d;
+}
+
+.http_orange {
+    background-color: #eb820b;
+}
+
+.http_gray {
+    background-color: #c0c0c0;
 }
