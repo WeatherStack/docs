@@ -1,0 +1,36 @@
+/* Credits: https://blog.logrocket.com/api-documentation-guide/ */
+
+.httpMethod {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    margin-right: 0.5em;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: white; 
+    text-transform: uppercase;
+}
+
+.get {
+    background-color: #61affe; 
+}
+
+.post {
+    background-color: #49cc90; 
+}
+
+.put {
+    background-color: #fca130; 
+}
+
+.patch {
+    background-color: #50e3c2; 
+}
+
+.delete {
+    background-color: #f93e3e; 
+}
+
+.default {
+    background-color: #666; 
+}

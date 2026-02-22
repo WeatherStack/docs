@@ -1,0 +1,81 @@
+---
+title: "1.x.x"
+---
+
+import HttpMethod from "@site/src/components/httpMethod";
+import HttpCode from "@site/src/components/httpCode";
+
+# WeatherStack Core External API 1.x.x
+
+<HttpMethod method="GET" /> <a id="root" href="#root">`/`</a>
+
+<br /><br />
+
+**Description:**
+This API route is simply to return a small JSON object, telling you some basic information as to
+what is running on that port.
+
+<details>
+    <summary>
+        <HttpCode code="200" />
+    </summary>
+
+    ```json
+    {
+        "success": true,
+        "code": 200,
+
+        "message": "Number 5 is alive!",
+
+        "version": "1.0.0",                                         // Current version
+        "name": "WeatherStack Core External API",                   // Name (Makes it easier to look it up)
+        "repository": "https://github.com/WeatherStack/Core"        // Repository link
+    }
+    ```
+</details>
+
+---
+
+<HttpMethod method="GET" /> <a id="health-liveliness" href="#health-liveliness">`/v1/health/liveliness`</a>
+
+<br /><br />
+
+**Description:**
+Only returns status 200 if everything is good, and working correctly and as expected.
+
+<details>
+    <summary>
+        <HttpCode code="200" />
+    </summary>
+
+    No content.
+</details>
+
+---
+
+<HttpMethod method="GET" /> <a id="health-info" href="#health-info">`/v1/health/info`</a>
+
+<br /><br />
+
+**Description:**
+This API route gives more in-depth information, such as uptime.
+
+<details>
+    <summary>
+        <HttpCode code="200" />
+    </summary>
+
+    ```json
+    {
+        "success": true,
+        "code": 200,
+
+        "message": "Dude, you can't run from the future!",
+
+        "stats": {
+            "uptime": 3538688.83811651,
+            "uptime_human": "1 months 10 days 12 hours 24 minutes 32 seconds 838 milliseconds"
+        }
+    }
+    ```
+</details>
