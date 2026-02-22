@@ -2,7 +2,8 @@
 
 import React from 'react';
 import clsx from 'clsx'; 
-import styles from './HttpMethod.module.css';
+//import styles from './HttpMethod.module.css';
+import styles from "@site/src/components/httpMethod.module.css";
 
 const methodColors = {
     GET: 'get',

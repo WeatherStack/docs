@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx'; 
-import styles from './HttpCode.module.css';
+//import styles from './HttpCode.module.css';
+import styles from "@site/src/components/httpCode.module.css";
 
 const codeColors = {
     200: "http_200"
