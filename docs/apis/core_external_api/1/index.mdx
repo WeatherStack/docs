@@ -10,6 +10,8 @@ These API routes follow the [standard API guidelines](/docs/standards/apis/), an
 in a range of different methods, mainly JSON (`application/json`), some may not accept data at all,
 or only by JSON (`application/json`), please see individual API route documentation.
 
+---
+
 <HttpMethod method="GET" /> <a id="root" href="#root">`/`</a>
 
 <br /><br />
@@ -20,6 +22,7 @@ what is running on that port.<br />
 **Accepts**:<br />
 (0)
 
+**Possible responses:**
 <details>
     <summary>
         <HttpCode code="200" />
@@ -50,6 +53,7 @@ Only returns status 200 if everything is good, and working correctly and as expe
 **Accepts**:<br />
 (0)
 
+**Possible responses:**
 <details>
     <summary>
         <HttpCode code="200" />
@@ -69,6 +73,7 @@ This API route gives more in-depth information, such as uptime.<br />
 **Accepts**:<br />
 (0)
 
+**Possible responses:**
 <details>
     <summary>
         <HttpCode code="200" />
@@ -104,6 +109,11 @@ For more information, read the [security documentation](/docs/security/) (which 
 **Accepts**:<br />
 JSON (`application/json`) (1)
 
+:::note
+This can only return a basic token, as that is the default, to perform any elevated actions, such as modifying
+configuration, or making any changes, you will need to elevate/upgrade the token temporarily.
+:::
+
 **Expected body content:**
 <details>
     <summary>
@@ -121,6 +131,7 @@ JSON (`application/json`) (1)
     ```
 </details>
 
+**Possible responses:**
 <details>
     <summary>
         <HttpCode code="200" />
@@ -147,7 +158,9 @@ JSON (`application/json`) (1)
             "token_duration_human": "30 days",
 
             "valid_from": "2026-01-00T17:30:00.000Z",
-            "valid_to": "2026-01-30T17:30:00.000Z"
+            "valid_to": "2026-01-30T17:30:00.000Z",
+
+            "token_level": 0 // Returns a basic token first
         }
     }
     ```
