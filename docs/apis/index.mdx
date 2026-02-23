@@ -27,80 +27,77 @@ import HttpCode from "@site/src/components/httpCode";
 For more information on the below HTTP resoponse codes, please read the
 [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status).
 
-This may be updated later with information about each response code.
+:::note
+Only some items in the table below may have descriptions, the full descriptions are available here:
+[Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status).
+:::
 
-<HttpCode code="100" />
-<HttpCode code="101" />
-<HttpCode code="102" />
-<HttpCode code="103" />
-
----
-
-<HttpCode code="200" />
-<HttpCode code="201" />
-<HttpCode code="202" />
-<HttpCode code="203" />
-<HttpCode code="204" />
-<HttpCode code="205" />
-<HttpCode code="206" />
-<HttpCode code="207" />
-<HttpCode code="208" /><br /><br />
-<HttpCode code="226" />
-
----
-
-<HttpCode code="300" />
-<HttpCode code="301" />
-<HttpCode code="302" />
-<HttpCode code="303" />
-<HttpCode code="304" />
-<HttpCode code="305" />
-<HttpCode code="306" />
-<HttpCode code="307" />
-<HttpCode code="308" />
-
----
-
-<HttpCode code="400" />
-<HttpCode code="401" />
-<HttpCode code="402" />
-<HttpCode code="403" />
-<HttpCode code="404" />
-<HttpCode code="405" />
-<HttpCode code="406" />
-<HttpCode code="407" />
-<HttpCode code="408" /><br /><br />
-<HttpCode code="409" />
-<HttpCode code="410" />
-<HttpCode code="411" />
-<HttpCode code="412" />
-<HttpCode code="413" />
-<HttpCode code="414" />
-<HttpCode code="415" />
-<HttpCode code="416" />
-<HttpCode code="417" /><br /><br />
-<HttpCode code="418" />
-<HttpCode code="421" />
-<HttpCode code="422" />
-<HttpCode code="423" />
-<HttpCode code="424" />
-<HttpCode code="425" />
-<HttpCode code="426" />
-<HttpCode code="428" />
-<HttpCode code="429" /><br /><br />
-<HttpCode code="431" />
-<HttpCode code="451" />
-
----
-
-<HttpCode code="500" />
-<HttpCode code="501" />
-<HttpCode code="502" />
-<HttpCode code="503" />
-<HttpCode code="504" />
-<HttpCode code="505" />
-<HttpCode code="506" />
-<HttpCode code="507" />
-<HttpCode code="508" /><br /><br />
-<HttpCode code="510" />
-<HttpCode code="511" />
+|          Code           | Name                            | Description                |                                          |
+| :---------------------: | :------------------------------ | :------------------------- | :--------------------------------------- |
+| <HttpCode code="100" /> | Continue                        |                            |                                          |
+| <HttpCode code="101" /> | Switching Protocols             |                            |                                          |
+| <HttpCode code="102" /> | Processing                      |                            |                                          |
+| <HttpCode code="103" /> | Early Hints                     |                            |                                          |
+|                         |                                 |                            |                                          |
+| <HttpCode code="200" /> | OK                              | The request was successful |                                          |
+| <HttpCode code="201" /> | Created                         |                            |                                          |
+| <HttpCode code="202" /> | Accepted                        |                            |                                          |
+| <HttpCode code="203" /> | Non-Authoritative Information   |                            |                                          |
+| <HttpCode code="204" /> | No Content                      |                            |                                          |
+| <HttpCode code="205" /> | Reset Content                   |                            |                                          |
+| <HttpCode code="206" /> | Partial Content                 |                            |                                          |
+| <HttpCode code="207" /> | Multi-Status                    |                            |                                          |
+| <HttpCode code="208" /> | Already Reported                |                            |                                          |
+| <HttpCode code="226" /> | IM Used                         |                            |                                          |
+|                         |                                 |                            |                                          |
+| <HttpCode code="300" /> | Multiple Choices                |                            |                                          |
+| <HttpCode code="301" /> | Moved Permanently               |                            |                                          |
+| <HttpCode code="302" /> | Found                           |                            |                                          |
+| <HttpCode code="303" /> | See Other                       |                            |                                          |
+| <HttpCode code="304" /> | Not Modified                    |                            |                                          |
+| <HttpCode code="305" /> | Use Proxy                       |                            |                                          |
+| <HttpCode code="306" /> |                                 |                            |                                          |
+| <HttpCode code="307" /> | Temporary Redirect              |                            |                                          |
+| <HttpCode code="308" /> | Parmanent Redirect              |                            |                                          |
+|                         |                                 |                            |                                          |
+| <HttpCode code="400" /> | Bad Request                     |                            |                                          |
+| <HttpCode code="401" /> | Unauthorised                    |                            |                                          |
+| <HttpCode code="402" /> | Payment Required                |                            |                                          |
+| <HttpCode code="403" /> | Forbidden                       |                            | [Related errors](/docs/errors/HTTP/403/) |
+| <HttpCode code="404" /> | Not Found                       |                            |                                          |
+| <HttpCode code="405" /> | Method Not Allowed              |                            |                                          |
+| <HttpCode code="406" /> | Not Acceptable                  |                            |                                          |
+| <HttpCode code="407" /> | Proxy Authentication Required   |                            |                                          |
+| <HttpCode code="408" /> | Request Timeout                 |                            |                                          |
+| <HttpCode code="409" /> | Conflict                        |                            |                                          |
+| <HttpCode code="410" /> | Gone                            |                            |                                          |
+| <HttpCode code="411" /> | Length Required                 |                            |                                          |
+| <HttpCode code="412" /> | Precondition Failed             |                            |                                          |
+| <HttpCode code="413" /> | Content Too Large               |                            |                                          |
+| <HttpCode code="414" /> | URI Too Long                    |                            |                                          |
+| <HttpCode code="415" /> | Unsupported Media Type          |                            |                                          |
+| <HttpCode code="416" /> | Range Not Satisfiable           |                            |                                          |
+| <HttpCode code="417" /> | Expectation Failed              |                            |                                          |
+| <HttpCode code="418" /> | I'm a Teapot                    |                            |                                          |
+| <HttpCode code="421" /> | Misdirected Request             |                            |                                          |
+| <HttpCode code="422" /> | Unprocessable Content           |                            |                                          |
+| <HttpCode code="423" /> | Locked                          |                            |                                          |
+| <HttpCode code="424" /> | Failed Dependency               |                            |                                          |
+| <HttpCode code="425" /> | Too Early                       |                            |                                          |
+| <HttpCode code="426" /> | Upgrade Required                |                            |                                          |
+| <HttpCode code="428" /> | Precondition Required           |                            |                                          |
+| <HttpCode code="429" /> | Too Many Requests               |                            |                                          |
+| <HttpCode code="431" /> | Request Header Fields Too Large |                            |                                          |
+| <HttpCode code="451" /> | Unavailable For Legal Reasons   |                            |                                          |
+|                         |                                 |                            |                                          |
+| <HttpCode code="500" /> | Internal Server Error           |                            |                                          |
+| <HttpCode code="501" /> | Not Implemented                 |                            |                                          |
+| <HttpCode code="502" /> | Bad Gateway                     |                            |                                          |
+| <HttpCode code="503" /> | Service Unavailable             |                            | [Related errors](/docs/errors/HTTP/503/) |
+| <HttpCode code="504" /> | Gateway Timeout                 |                            |                                          |
+| <HttpCode code="505" /> | HTTP Version Not Supported      |                            |                                          |
+| <HttpCode code="506" /> | Variant Also Negotiates         |                            |                                          |
+| <HttpCode code="507" /> | Insufficient Storage            |                            |                                          |
+| <HttpCode code="508" /> | Loop Detected                   |                            |                                          |
+| <HttpCode code="510" /> | Not Extended                    |                            |                                          |
+| <HttpCode code="511" /> | Network Authentication Required |                            |                                          |
