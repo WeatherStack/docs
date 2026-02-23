@@ -34,6 +34,9 @@ kanban
 ## WeatherStack Edge Roadmap
 
 ## WeatherStack Docs
+
+### 1.0.0
+
 ```mermaid
 ---
 config:
