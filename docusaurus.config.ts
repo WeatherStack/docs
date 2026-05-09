@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://weatherstack.wtdawson.info',
+  url: 'https://www.weatherstack.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -77,16 +77,20 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
         gtag: {
-          trackingID: 'G-820QPNTNHE',
+          trackingID: 'G-3RFWVE7HCR',
           anonymizeIP: true,
         }
       } satisfies Preset.Options,
     ],
   ],
 
+  headTags: [
+
+  ],
+
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/weatherstack-social-card.jpg',
+    image: 'img/weatherstack-social-card.png',
     navbar: {
       title: 'WeatherStack',
       logo: {

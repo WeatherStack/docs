@@ -1,0 +1,66 @@
+---
+title: "Contributing"
+---
+
+This is a short guide to get you started with contributing to the WeatherStack Core project.
+If this is your first (or one of your first) times contributing to an OSS (Open Source Software)
+project, please read the [new contributors guide](/docs/getting-started/new-contributors) before
+continuing any further.
+
+:::tip
+This is not the easiest project to get started with, as you need a lot of in-depth knowledge
+beforehand, look at the [new contributors guide](/docs/getting-started/new-contributors) to
+see what new contributors can add!
+:::
+
+## Prerequisites
+- Knowledge with CMake, C, and C++
+- Git (Gittyup option but recommended)
+- A compiler of sorts
+  - **Windows**: MinGW CLang
+  - **Linux**: CLang
+- An IDE
+
+## Building WS Core
+1. Pull the repository
+```bash
+git pull https://github.com/WeatherStack/core.git
+```
+2. Build
+<br />
+**Windows**:
+```batch
+build_win.bat build (Debug/Release) "path/to/vcpkg/toolchain/file.cmake"
+```
+**Linux**:
+```bash
+build_linux.sh build (Debug/Release)
+```
+3. Binaries will appear in the newly created `bin` directory
+
+## Contributing to WS Core
+1. Find an unassigned (and not blocked) task in the
+[project](https://github.com/orgs/WeatherStack/projects/2), or
+[issues tab](https://github.com/WeatherStack/core/issues)
+2. Comment and ask for the issue to be assigned to you, and wait for a response from
+maintainers
+3. Fork the repository, if you haven't already
+4. Create a new branch in the fork you just created, and name it something like
+`username/add-cool-feature`, keep it small, and adding your username is optional
+5. Make the first commit
+6. Optionally, create a draft PR stating what you will add to the PR, and the issue it
+links to
+7. Finish the task
+8. Create (if you didn't do step 6), and submit the PR, filling in the PR contents
+with what you changed
+:::tip
+PRs with no description have a high likelyness of being rejected without any review
+:::
+9. Wait for a review
+10. Make any changes requested by other contributors, or maintainers, then resubmit,
+and back to step 9
+
+:::note
+If you no longer want to work on a task, please comment and ask to be removed so that it can
+be taken by another contributor
+:::
