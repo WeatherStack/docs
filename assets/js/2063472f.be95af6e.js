@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([["2884"],{7646(e){e.exports=JSON.parse('{"tags":[{"label":"weatherstack","permalink":"/blog/tags/weatherstack","count":2},{"label":"update","permalink":"/blog/tags/update","count":1},{"label":"welcome","permalink":"/blog/tags/welcome","count":1}]}')}}]);

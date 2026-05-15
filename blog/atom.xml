@@ -2,11 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.weatherstack.org/blog/</id>
     <title>WeatherStack Blog</title>
-    <updated>2025-05-28T00:00:00.000Z</updated>
+    <updated>2026-05-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.weatherstack.org/blog/"/>
     <subtitle>WeatherStack Blog</subtitle>
     <icon>https://www.weatherstack.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[The WeatherStack Project]]></title>
+        <id>https://www.weatherstack.org/blog/the-weatherstack-project/</id>
+        <link href="https://www.weatherstack.org/blog/the-weatherstack-project/"/>
+        <updated>2026-05-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the WeatherStack Project.]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to the WeatherStack Project.</p>
+<ul>
+<li class=""><a href="https://www.weatherstack.org/blog/the-weatherstack-project/#new-domain-name" class="">New domain name</a></li>
+<li class=""><a href="https://www.weatherstack.org/blog/the-weatherstack-project/#what-is-the-project" class="">What is the project?</a></li>
+<li class=""><a href="https://www.weatherstack.org/blog/the-weatherstack-project/#what-has-changed" class="">What has changed</a></li>
+</ul>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="new-domain-name">New domain name<a href="https://www.weatherstack.org/blog/the-weatherstack-project/#new-domain-name" class="hash-link" aria-label="Direct link to New domain name" title="Direct link to New domain name" translate="no">​</a></h2>
+<p>Recently, WeatherStack got a brand new <a href="https://weatherstack.org/" target="_blank" rel="noopener noreferrer" class="">domain</a>, this is where you'll find all the documentation for WeatherStack.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-the-project">What is the project?<a href="https://www.weatherstack.org/blog/the-weatherstack-project/#what-is-the-project" class="hash-link" aria-label="Direct link to What is the project?" title="Direct link to What is the project?" translate="no">​</a></h2>
+<p>The WeatherStack Project is an open-source project aimed toward making it easier for people to get started with creating their very own
+Personal Weather Station. It's also aimed toward people who want to learn about computers, and how embedded systems work.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-has-changed">What has changed<a href="https://www.weatherstack.org/blog/the-weatherstack-project/#what-has-changed" class="hash-link" aria-label="Direct link to What has changed" title="Direct link to What has changed" translate="no">​</a></h2>
+<p>Quite a lot has changed since the last post, there has been some development on the WeatherStack Core, which was originally going to be written
+in TypeScript, C#, and maybe even Python, but instead now is using C, and C++.</p>
+<p>The aim switched from being firmware that worwks with everything, to being a framework-like project that allows you to build with WeatherStack,
+rather than the project providing everything for you. This also makes WeatherStack significantly more flexible for you to build your own hardware,
+and add sensors on later without having to wonder if we support it, since you support it.</p>]]></content>
+        <author>
+            <name>MrBisquit</name>
+            <uri>https://wtdawson.info</uri>
+        </author>
+        <category label="weatherstack" term="weatherstack"/>
+        <category label="update" term="update"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://www.weatherstack.org/blog/welcome/</id>
@@ -20,6 +51,7 @@
 <li class=""><a href="https://www.weatherstack.org/blog/welcome/#aims" class="">Aims</a></li>
 <li class=""><a href="https://www.weatherstack.org/blog/welcome/#technology-stack" class="">Technology stack</a></li>
 </ul>
+<!-- -->
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-weatherstack">What is WeatherStack?<a href="https://www.weatherstack.org/blog/welcome/#what-is-weatherstack" class="hash-link" aria-label="Direct link to What is WeatherStack?" title="Direct link to What is WeatherStack?" translate="no">​</a></h2>
 <p>WeatherStack is an open-source project designed to make it easy for people to set up and maintain their very own personal weather station (PWS) as well as send their weather data to providers such as Wunderground.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="parts-of-the-project">Parts of the project<a href="https://www.weatherstack.org/blog/welcome/#parts-of-the-project" class="hash-link" aria-label="Direct link to Parts of the project" title="Direct link to Parts of the project" translate="no">​</a></h2>
@@ -64,5 +96,7 @@ I also aim this project to be easy-to-use, beginner &amp; developer friendly, an
             <name>MrBisquit</name>
             <uri>https://wtdawson.info</uri>
         </author>
+        <category label="weatherstack" term="weatherstack"/>
+        <category label="welcome" term="welcome"/>
     </entry>
 </feed>
