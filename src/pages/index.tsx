@@ -10,9 +10,11 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <img src={"/img/logo.svg"} style={{ backgroundColor: "var(--ifm-color-emphasis-1000)", borderRadius: "5%" }} />
         <Heading as="h1" className="hero__title">
           The {siteConfig.title} Project
         </Heading>

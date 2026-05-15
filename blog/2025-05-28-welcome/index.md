@@ -2,7 +2,7 @@
 slug: welcome
 title: Welcome
 authors: [mrbisquit]
-tags: []
+tags: [weatherstack, welcome]
 ---
 
 Welcome to WeatherStack's documentation website.
@@ -12,7 +12,7 @@ Welcome to WeatherStack's documentation website.
 - [Aims](#aims)
 - [Technology stack](#technology-stack)
 
-<!-- truncate -->
+{/* truncate */}
 
 ## What is WeatherStack?
 WeatherStack is an open-source project designed to make it easy for people to set up and maintain their very own personal weather station (PWS) as well as send their weather data to providers such as Wunderground.
