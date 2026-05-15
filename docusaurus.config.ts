@@ -91,7 +91,7 @@ const config: Config = {
 
   themeConfig: {
     metadata: [
-      {name: 'keywords', content: 'weatherstack, real-time weather, official weatherstack, weather, embedded, open-source, weather station, pws, personal weather station,'},
+      {name: 'keywords', content: 'weatherstack, real-time weather, official weatherstack, weather, embedded, open-source, weather station, pws, personal weather station, build your own station, build your own weather station, build your own,'},
       {name: 'twitter:card', content: 'summary_large_image'},
     ],
     // Replace with your project's social card

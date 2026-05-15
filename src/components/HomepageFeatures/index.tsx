@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_invite-only.svg').default,
     description: (
       <>
-        WeatherStack is built on a secure and reliable infrastructure, ensuring your weather data is always available and protected.
+        WeatherStack is built to store and process your data securely, so you don't have to worry about if your data is safe.
       </>
     ),
   },
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_organizing-data.svg').default,
     description: (
       <>
-        WeatherStack lets you focus on your weather data without worrying about the underlying infrastructure.
+        WeatherStack lets you focus on building your own weather station, without the hastle of building the server software.
       </>
     ),
   },

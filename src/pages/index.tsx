@@ -14,7 +14,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          The {siteConfig.title} Project
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons} style={{gap: '1rem'}}>
@@ -39,8 +39,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Welcome to ${siteConfig.title}`}
-      description="This website provides the documentation for WeatherStack.">
+      title={`The ${siteConfig.title} Project`}
+      description="The WeatherStack Project is an open-source personal weather station project, made for you to make your own weather station!">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
